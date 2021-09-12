@@ -1,5 +1,7 @@
-# Sheepdog Cigar Club #
-## Berks Chapter ##
+---
+title: "Sheepdog Cigar Club"
+subtitle: "Berks Chapter"
+---
 
 Sheepdog Cigar Club brings six distinct groups of people together (Police, Fire, EMS, Dispatch, Corrections, and Military).  However, Sheepdog Cigar Club members share two things in common, a passion for the fine art of hand rolled cigars and a dedication to public service. It is this common interest in cigars and stewardship that brings our Sheepdog family together.  Furthermore, in honor of the Sheepdog, our club operates with a charitable purpose of supporting our local Police & Fire K-9 Units  
 
