@@ -2,8 +2,9 @@
 <h1>{{ .Params.title }}</h1>
 <h2>{{ .Params.subtitle }}</h2>
 
+<div class="row">
+    <div class="col-md-8 col-sm-7">
 {{ .Content }}
-
 <form name="register" id="register" method="POST" data-netlify="true" data-netlify-recaptcha="true">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
@@ -96,6 +97,10 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </form>
+</div>
+{{ partial "section_nav.html" . }}
+</div>
+
 
 <script lang="javascript" type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
