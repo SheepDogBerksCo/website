@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="row">
+    <div class="col-12 text-center"><h1>{{ .Params.title }}</h1></div>
+    <div class="col-12 text-center"><h2>{{ .Params.subtitle }}</h2></div>
+</div>
+
+{{ range .Pages }}
+
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="d-none d-sm-block col-sm-4 col-md-3 col-xs-12">
+            <img class="lazy-loaded img-fluid"
+                 src="//via.placeholder.com/500" data-lazy-type="image" 
+                 data-src="//via.placeholder.com/500">        
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+            <div class="px-2">
+                <a href="{{ .Params.link }}" target="_new"><h3>{{ .Title }}</h3></a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5">
+                            <h4>Address</h4>
+                            <addr>{{ .Params.Address | safeHTML }}</addr>
+                            <h4>Telephone</h4>
+                            <p>{{ .Params.Phone }}</p>
+                        </div>
+                        <div class="col-xs-12 col-md-7">
+                            <h4>Officers</h4>
+                            <dl>
+                                {{ range .Params.Officers }}
+                                <dt>{{ .Name }}</dt>
+                                <dd>{{ .Office }}</dd>
+                                {{ end }}
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}
+
+{{ end }}
