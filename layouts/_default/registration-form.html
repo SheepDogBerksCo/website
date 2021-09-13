@@ -1,0 +1,145 @@
+{{ define "main" }}
+<h1>{{ .Params.title }}</h1>
+<h2>{{ .Params.subtitle }}</h2>
+
+{{ .Content }}
+
+<form name="register" id="register" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Your name" />
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" name="phone" placeholder="Your telephone number" />
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" name="address" rows="4"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" placeholder="user@example.com" />
+    </div>
+    <div class="mb-3">
+        <label for="facebookUsername" class="form-label">Facebook Username (for private group)</label>
+        <input type="text" class="form-control" name="facebookUsername" placeholder="user@example.com" />
+    </div>
+    <div class="mb-3">
+        <label for="referral" class="form-label">Name of Referral (if applicable)</label>
+        <input type="text" class="form-control" name="referral" />
+    </div>
+    
+    
+    
+    <hr />
+
+
+
+    <div class="mb-3">
+        <label for="branchOfMilitary" class="form-label">Most current agency or military branch</label>
+        <input type="text" class="form-control" name="branchOfMilitary" placeholder="Marines/Army/Navy/etc." />
+    </div>
+    <div class="mb-3">
+        <label for="titleOrRank" class="form-label">Title</label>
+        <input type="text" class="form-control" name="titleOrRank" placeholder="" />
+    </div>
+    <div class="mb-3">
+        <label for="currentStatus" class="form-label">Status of Service</label>
+        <select name="currentStatus">
+            <option></option>
+            <option value="active">Active</option>
+            <option value="retired">Retired</option>
+            <option value="discharged">Honorably Discharged</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="proofOfStatus" class="form-label">Proof of Service</label>
+        <input type="file" name="proofOfStatus" class="form-control" />
+    </div>
+
+
+
+
+    <hr />
+
+
+
+
+    <div class="mb-3">
+        <label for="shirtSize" class="form-label">Club Shirt</label>
+        <select name="shirtSize">
+            <option></option>
+            <option value="sm">Small</option>
+            <option value="med">Medium</option>
+            <option value="lg">Large</option>
+            <option value="xl">XL</option>
+            <option value="2x">2X</option>
+            <option value="3x">3X</option>
+            <option value="4x">4X</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="nameTape" class="form-label">Nametape (14 Letters Max)</label>
+        <input type="text" class="form-control" name="nameTape" maxlength="14" />
+    </div>
+    <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" value="" name="informationIsValid" id="informationIsValid">
+        <label class="form-check-label" for="informationIsValid">
+          By checking, I attest that all information herein is accurate.  I have read, understand, and agree to follow all club rules, protocols, and conduct standards.
+        </label>
+    </div>
+    <div class="mb-3">
+        <div data-netlify-recaptcha="true"></div>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<script lang="javascript" type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    $("#register").validate({
+        errorClass: "text-danger",
+        rules: {
+            name: "required",
+            phone: "required",
+            address: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            facebookUsername: "required",
+            branchOfMilitary: "required",
+            titleOrRank: "required",
+            currentStatus: "required",
+            shirtSize: "required",
+            nameTape: "required",
+            informationIsValid: {
+                required: true,
+                rangelength: [1, 1]
+            }
+        },
+        messages: {
+            name: { required: "Your name is required." },
+            phone: { required: "Your phone number is required." },
+            address: { required: "Your address is required." },
+            email:{
+                required: "Your email address is required.",
+                email: "Please enter a valid email address."
+            },
+            facebookUsername: { required: "Your Facebook username is required." },
+            branchOfMilitary: { required: "You must provide what agency or military branch you currently serve or have served in." },
+            titleOrRank: { required: "We need to know your latest title or rank." },
+            currentStatus: { required: "Please select the status of your service." },
+            shirtSize: { required: "We need to know your shirt size." },
+            nameTape: { required: "We need to know what you would like on your nametape." },
+        },
+        submitHandler: function(form){
+            form.submit();
+        }
+    });
+});
+</script>
+
+{{ end }}
