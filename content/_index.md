@@ -19,7 +19,7 @@ Sheepdog Cigar Club raises funds and collects essential supplies to support our 
 
 Fundraising consists of: Member fees, raffles, 50/50s, supply drives, retail sales, and solicitation of corporate sponsors and private donors.
 
-To donate: Click Donate in the Dropdown menu.
+To donate: Click `Donations` from the top menu.
 
 ### Cigars for Warriors ###
 
