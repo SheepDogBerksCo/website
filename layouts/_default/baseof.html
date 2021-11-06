@@ -5,9 +5,12 @@
 
 <body>
 	{{ partial "header.html" . }}
-	<div class="container container-lg container-xl bg-light">
+	<main>
+	<div class="container container-lg container-xl">
 		{{ block "main" . }}{{ end }}
-	</div>
+	</div>		
+	</main>
+
 
     {{ partial "social.html" . }}
 

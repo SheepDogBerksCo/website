@@ -1,0 +1,12 @@
+body {
+    background: black;
+}
+
+main, main > .container, main > .container > .row, main > .container-fluid > .row, footer, footer > .container, footer > .container-fluid {
+    background-color: black;
+    color: #c4c4c4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #773118;
+}
