@@ -15,7 +15,7 @@ pics:
   - slide-4.jpg
 ---
 
-## George Bolton Made an Honorable Member ##
+## George Bolton Made an Honorary Member ##
 
 It was our pleasure to honor George Bolton, fmr. Marine Personnel, to our club this Veteran's day.
 
