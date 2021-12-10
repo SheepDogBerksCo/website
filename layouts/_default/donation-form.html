@@ -1,0 +1,101 @@
+{{ define "main" }}
+<h1>{{ .Params.title }}</h1>
+<h2>{{ .Params.subtitle }}</h2>
+
+<div class="row">
+    <div class="col-md-8 col-sm-7">
+{{ .Content }}
+<form name="donation-request" id="donation-request" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Your name" />
+    </div>
+    <div class="mb-3">
+        <label for="business-name" class="form-label">Business Name</label>
+        <input type="text" class="form-control" name="business-name" placeholder="Your name" />
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" name="phone" placeholder="Your telephone number" />
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" placeholder="user@example.com" />
+    </div>
+    <div class="mb-3">
+        <label for="donation-type" class="form-label">Type of Donation</label>
+        <select name="donation-type" id="donation-type" class="form-select">
+            <option></option>
+            <option>General</option>
+            <option>1-Year Food Sponsorship - $500.00</option>
+            <option>1-Year Sponsorship - $1,000.00</option>
+        </select>
+    </div>
+    <div class="mb-3" id="donation-amount">
+        <label for="donation-amount" class="form-label">Amount of Donation</label>
+        <input type="number" name="donation-amount" class="form-control" min="0.01" step="0.01" />
+    </div>
+    <div class="mb-3">
+        <div data-netlify-recaptcha="true"></div>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+{{ partial "section_nav.html" . }}
+</div>
+
+
+<script lang="javascript" type="text/javascript">
+    var $amtField = undefined;
+
+    function amountRequired() {
+        return $("#donation-type").val() == "General";
+    }
+
+document.addEventListener("DOMContentLoaded", function() {
+    $amtField =  $("#donation-amount");
+    $amtField.hide();
+
+    $("#donation-type").on("change", function() {
+        if(this.value === "General") {
+            $amtField.show();
+        } else {
+            $amtField.hide();
+        }
+    });
+
+    $("#donation-request").validate({
+        errorClass: "text-danger",
+        rules: {
+            name: "required",
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            "donation-type": "required",
+            "donation-amount": {
+                required: amountRequired,
+                digits: true
+            }
+        },
+        messages: {
+            name: { required: "Your name is required." },
+            phone: { required: "Your phone number is required." },
+            email:{
+                required: "Your email address is required.",
+                email: "Please enter a valid email address."
+            },
+            "donation-type": { required: "Please select the type of donation you wish to make."},
+            "donation-amount": { required: "Please enter the amount you wish to donate." }
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+});
+</script>
+
+{{ end }}

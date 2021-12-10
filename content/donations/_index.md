@@ -1,15 +1,13 @@
 ---
 title: Donations
-layout: single
+layout: "donation-form"
 ---
 
-## Sponsor K-9 Units ##
+## General Donations ##
 
-_______________ is a 501(c)(3) charitable organization and all contributions are tax deductible.  Even the smallest donations are greatly appreciated.  Your support and contributions will enable us to meet our goals and fund our mission. 
+Sheepdog GY6 Cigar Club Berks Chapter is a 501(c)(3) charitable organization and all contributions are tax deductible.  Even the smallest donations are greatly appreciated.  Your support and contributions will enable us to meet our goals and fund our mission. 
 
-EIN # xx-xxxxxxx. 
-
-
+EIN # 84-2828270. 
 
 ### 1-Year Food Sponsorship - Food Only - $500.00 ###
 
