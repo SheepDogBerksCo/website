@@ -6,9 +6,19 @@
 <body>
 	{{ partial "header.html" . }}
 	<main>
-	<div class="container container-lg container-xl">
-		{{ block "main" . }}{{ end }}
-	</div>		
+		<div class="container-fluid h-100" style="height: 100%;">
+			<div class="row">
+			<!-- <div class="col-2" style="background-repeat: no-repeat; background-image: url('/img/left_banner.png'); background-size: contain; background-position: center top;">&nbsp;</div> -->
+			<div class="col-2">
+				<img src="/img/left_banner.png" class="img-fluid" />
+			</div>
+			<div class="col-8">{{ block "main" . }}{{ end }}</div>
+			<!-- <div class="col-2" style="background-repeat: no-repeat; background-image: url('/img/right_banner.png'); background-size: contain; background-position: center top;">&nbsp;</div> -->
+			<div class="col-2">
+				<img src="/img/right_banner.png" class="img-fluid" />
+			</div>
+			</div>
+		</div>		
 	</main>
 
 
