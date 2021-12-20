@@ -1,5 +1,5 @@
 ---
-title: Veteran's Day Sheepdog Social
+title: Veteran's Day Social
 subtitle: Suburban Cigar Lounge
 location: https://goo.gl/maps/CRtjFbeGxaiwF7Lf7
 date: 2021-11-11T00:00:00
