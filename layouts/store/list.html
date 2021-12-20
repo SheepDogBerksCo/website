@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<dl>
+    {{ range .Pages }}
+    
+    <dt><a href="{{ .Permalink }}">{{ .Params.sku }} - {{ .Params.title }}</a></dt>
+    <dd>{{ .Params.price }}</dd>
+    
+    {{ end }}
+</dl>
+
+{{ end }}

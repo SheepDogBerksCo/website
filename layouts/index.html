@@ -1,5 +1,33 @@
 {{ define "main" }}
 <h1 class="text-center">{{ .Params.title }}</h1>
 <h2 class="text-center">{{ .Params.subtitle }}</h2>
+
+<h2>Events</h2>
+
+<p>A thank you to all who attended our prior events.  Please keep a lookout on our Facebook page, as well as this site for future events.</p>
+
+{{ range where $.Site.RegularPages "Section" "events" }}
+
+
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="d-none d-sm-block col-sm-4 col-md-3 col-xs-12">
+            <img class="lazy-loaded img-fluid" src="/img/venues/{{ .Params.venue_logo }}" data-lazy-type="image" />        
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+            <h2><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
+            <h3 class="h5"><a href="{{ .Params.location }}" target="_new" class="text-muted">{{ .Params.subtitle }}</a></h3>
+            <ul class="list-unstyled">
+                <li>{{ .Params.date.Format "January 2, 2006" }}</li>
+                <li>{{ .Params.time }}</li>
+            </ul>
+
+            {{ .Params.summary }}
+        </div>
+    </div>
+</div>
+
+{{ end }}
+
 {{ .Content }}
 {{ end }}
