@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <h1>{{ .Params.title }}</h1>
+                <p>Price: {{ .Params.price }}</p>
+                <button class="btn btn-outline-primary">Buy</button>
+            </div>
+        </div>
+        <div class="col-8">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
