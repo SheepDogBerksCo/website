@@ -4,7 +4,7 @@
     {{ range .Pages }}
     
     <dt><a href="{{ .Permalink }}">{{ .Params.sku }} - {{ .Params.title }}</a></dt>
-    <dd>{{ .Params.price }}</dd>
+    <dd>{{ .Params.price | lang.FormatCurrency 2 "USD" }}</dd>
     
     {{ end }}
 </dl>

@@ -4,8 +4,18 @@
         <div class="col-4">
             <div class="card">
                 <h1>{{ .Params.title }}</h1>
-                <p>Price: {{ .Params.price }}</p>
-                <button class="btn btn-outline-primary">Buy</button>
+                <p>Price: {{ .Params.price | lang.FormatCurrency 2 "USD" }}</p>
+                <button class="btn btn-primary snipcart-add-item"
+                    data-item-id="{{ .Params.sku }}"
+                    data-item-name="{{ .Params.title }}"
+                    data-item-price="{{ .Params.price | lang.FormatNumber 2 }}"
+                    data-item-url="{{ .Permalink }}"
+                    data-item-stackable="false"
+                    {{ range $idx, $element := .Params.options }}
+                    data-item-custom{{ $idx }}-name="{{ $element.key}}"
+                    data-item-custom{{ $idx }}-options="{{ $element.options }}"
+                    {{ end }}
+                >Add to Cart</button>
             </div>
         </div>
         <div class="col-8">
