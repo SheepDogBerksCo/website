@@ -6,7 +6,7 @@
 
 {{ .Content }}
 
-{{ range .Pages }}
+{{ range where .Pages ".Params.date" "le" now }}
 
 
 <div class="card mb-3">
