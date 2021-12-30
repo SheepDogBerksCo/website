@@ -23,7 +23,7 @@ To donate: Click `Donations` from the top menu.
 
 ### Cigars for Warriors ###
 
-![Cigars for Warriors](/img/cigars-for-warriors.jpeg)
+[![Cigars for Warriors](/img/cigars-for-warriors.jpeg)](https://cigarsforwarriors.org/)
 
 At club socials, we collect cigars from our members and send them to Cigars For Warriors, where they begin their journey to ultimately end up in the hands of our active duty combat troops. 
 
