@@ -10,3 +10,7 @@ main, main > .container, main > .container > .row, main > .container-fluid > .ro
 h1, h2, h3, h4, h5, h6 {
     color: #773118;
 }
+
+.card {
+    background-color: transparent;
+}
