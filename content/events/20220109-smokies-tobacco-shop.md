@@ -13,4 +13,5 @@ pics:
   - slide-2.jpg
   - slide-3.jpg
   - slide-4.jpg
+  - slide-5.jpg
 ---
