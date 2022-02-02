@@ -5,7 +5,7 @@
 <h2>Upcoming Events</h2>
 <p>Please join us for the following events:</p>
 
-{{ $future := where (where .Site.RegularPages ".Params.date" "ge" now).ByDate "Section" "events" }}
+{{ $future := where (where .Site.RegularPages ".Params.date" "ge" (now.AddDate 0 0 -1)).ByDate "Section" "events" }}
 {{ range $future }}
 
 <div class="card mb-3">
@@ -32,7 +32,7 @@
 
 <p>A thank you to all who attended our prior events.</p>
 
-{{ range first 5 (where (where $.Site.RegularPages ".Params.date" "le" now) "Section" "events") }}
+{{ range first 5 (where (where $.Site.RegularPages ".Params.date" "le" (now.AddDate 0 0 -1)) "Section" "events") }}
 
 <div class="card mb-3">
     <div class="row g-0">
