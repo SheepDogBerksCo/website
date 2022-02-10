@@ -1,3 +1,6 @@
 baseURL = 'https://sheepdogccberkschapter.com'
 languageCode = 'en-us'
 title = 'Sheep Dog Cigar Club - Berks Chapter'
+
+[markup.goldmark.renderer]
+unsafe=true
