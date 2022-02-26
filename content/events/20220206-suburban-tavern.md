@@ -8,12 +8,6 @@ layout: single
 section: events
 venue_logo: "suburban-tavern.jpg"
 summary: Join us for our official release event of the Sheepdog Cigar Club Cigar
-pics:
-  - slide-1.jpg
-  - slide-2.jpg
-  - slide-3.jpg
-  - slide-4.jpg
-  - slide-5.jpg
 ---
 
 You will totally love the flavor of this stick as the Ecuadorian Sumatra Wrapper, Ecuadorian Habano binder and Carbina filler will satisfy your palate with its awesome blend.

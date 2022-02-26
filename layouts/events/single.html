@@ -1,9 +1,10 @@
 {{ define "main" }}
 
+<h1>{{ .Title }}</h1>
+
+{{ if isset .Params "pics" }}
 {{ $panes := .Params.pics }}
 {{ $count := len $panes }}
-
-<h1>{{ .Title }}</h1>
 
 <div id="carousel-info" class="carousel slide" data-bs-ride="carousel" data-pause="false" data-bs-interval="3000">
 	{{ if gt $count 1 }}
@@ -32,6 +33,7 @@
 	{{ end }}
 </div>
 
+{{ end }}
 
 {{ .Content }}
 
