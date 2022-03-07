@@ -27,4 +27,4 @@ Pricing for these cigars:
 * 10-Pack: $90.00 ($9.00/ea)
 * 20-Pack: $160.00 ($8.00/ea)
 
-Cigars may be purchased through Richard Gould directly, or at Suburban Cigar Lounge.  A small portion of the profits for this cigar will be donated to Sheepdog Cigar Club to continue its mission of helping our retired K9 officers.
+Cigars may be purchased through Richard Gould directly, or at Suburban Cigar Lounge.  A portion of the profits for this cigar will be donated to Sheepdog Cigar Club to continue its mission of helping our retired K9 officers.
