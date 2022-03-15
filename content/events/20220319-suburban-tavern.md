@@ -2,7 +2,7 @@
 title: Sheepedog Cigar Post St. Patrick's Day Social
 subtitle: Suburban Tavern
 location: https://goo.gl/maps/CRtjFbeGxaiwF7Lf7
-date: 2022-03-13T00:00:00
+date: 2022-03-19T00:00:00
 time: 12:00pm-4:00pm
 layout: single
 section: events
