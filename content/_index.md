@@ -1,9 +1,36 @@
 ---
 title: "Sheepdog Cigar Club"
-subtitle: "Honoring one of our own"
 ---
 
-<img src="/img/events/2022-02-02/slide-5.jpg" class="img-fluid mx-auto d-block" />
+## Sheep Dog Monogrammed Lighters ##
+
+We are now selling our cutter and lighters.
+
+<div class="row mb-3">
+<div class="col-4 mb-3">
+<img src="/img/swag/small-lighter.jpeg" class="img-fluid mx-auto d-block">
+</div>
+<div class="col-4 mb-3">
+<img src="/img/swag/large-lighter.jpeg" class="img-fluid mx-auto d-block">
+</div>
+<div class="col-4 mb-3">
+<img src="/img/swag/cutter-60-ring.jpeg" class="img-fluid mx-auto d-block">
+</div>
+</div>
+
+Pricing for these items are:
+
+* Small Sidewinder Lighter: $20.00
+* Large Rogue Lighter: $22.00
+* Cutter - $18.00
+
+You can visit Suburban Tavern / Cigar Lounge, or contact Richard Gould to purchase yours today.
+
+<hr />
+
+## Honoring one of Our Own ##
+
+<img src="/img/events/2022-02-02/slide-5.jpg" class="img-fluid mx-auto d-block mb-5" />
 
 Tonight we started our 2022 K-9 Donations by having Retired K-9 Kaz from the Exeter Twp Police Department join us at the Suburban Cigar Lounge with his handler to accept our donation of his favorite food and Kong toys. KAZ served the residents of Exeter and Berks County for the last 11 years. We hope he is able to enjoy a nice long healthy retirement and we thank him for his service to the community. 
 
