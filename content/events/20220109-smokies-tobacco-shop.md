@@ -14,4 +14,5 @@ pics:
   - slide-3.jpg
   - slide-4.jpg
   - slide-5.jpg
+show_details: false
 ---

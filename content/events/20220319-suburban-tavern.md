@@ -8,6 +8,7 @@ layout: single
 section: events
 venue_logo: "suburban-tavern.jpg"
 summary: We are having our post St. Patrick's Day social.  Alec Bradley Filthy Hooligans are in stock, and our new Sheepdog Lighters and Cutters are now available.
+show_details: false
 ---
 
 Join us at the Suburban Cigar Lounge for our post St Patrick’s Day Social. Alec Bradley Filthy Hooligans are in stock and ready to fire up!

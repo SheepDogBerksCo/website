@@ -16,6 +16,7 @@ pics:
   - slide-5.jpg
   - slide-6.jpg
   - slide-7.jpg
+show_details: false
 ---
 
 You will totally love the flavor of this stick as the Ecuadorian Sumatra Wrapper, Ecuadorian Habano binder and Carbina filler will satisfy your palate with its awesome blend.

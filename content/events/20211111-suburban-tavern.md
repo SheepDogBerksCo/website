@@ -13,6 +13,7 @@ pics:
   - slide-2.jpg
   - slide-3.jpg
   - slide-4.jpg
+show_details: false
 ---
 
 ## George Bolton Made an Honorary Member ##
