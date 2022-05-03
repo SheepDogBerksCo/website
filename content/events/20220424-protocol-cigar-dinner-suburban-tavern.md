@@ -8,13 +8,18 @@ layout: single
 section: events
 venue_logo: "suburban-tavern.jpg"
 summary: We are having our spring dinner at Suburban Tavern & Restaurant sponsored by Protocol Cigars
+pics:
+  - slide-1.png
+  - slide-2.png
+  - slide-3.png
+  - slide-4.png
+  - slide-5.png
+  - slide-6.png
+  - slide-7.png
 show_details: true
 ---
 
 Join us at The Suburban Tavern & Cigar Lounge for an amazing cigar dinner event sponsored by Protocol Cigars!
-
-
-
 
 --------------
 <div class="row">
