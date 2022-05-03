@@ -9,7 +9,10 @@
 {{ $currentGroup := "" }}
 {{ $nextGroup := "" }}
 
-{{ range .Pages.ByDate.Reverse }}
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+{{ template "_internal/pagination.html" . }}
+
+{{ range $paginator.Pages }}
 {{ $nextGroup = cond (ge .Date now) "Future" "Past" }}
 
 {{ if and (ne $currentGroup $nextGroup) (ge .Date now ) }}
@@ -40,5 +43,6 @@
 
 
 {{ end }}
+
 
 {{ end }}
