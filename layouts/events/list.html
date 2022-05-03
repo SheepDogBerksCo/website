@@ -6,8 +6,19 @@
 
 {{ .Content }}
 
-{{ range where .Pages ".Params.date" "le" now }}
+{{ $currentGroup := "" }}
+{{ $nextGroup := "" }}
 
+{{ range .Pages.ByDate.Reverse }}
+{{ $nextGroup = cond (ge .Date now) "Future" "Past" }}
+
+{{ if and (ne $currentGroup $nextGroup) (ge .Date now ) }}
+<h1>Upcoming Events</h1>
+{{ else if and (ne $currentGroup $nextGroup) (lt .Date now ) }}
+<h1>Prior Events</h1>
+{{ end }}
+
+{{ $currentGroup = $nextGroup }}
 
 <div class="card mb-3">
     <div class="row g-0">
@@ -26,6 +37,7 @@
         </div>
     </div>
 </div>
+
 
 {{ end }}
 
