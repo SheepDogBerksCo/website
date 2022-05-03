@@ -8,13 +8,19 @@ We are now selling our cutter and lighters.
 
 <div class="row mb-3">
 <div class="col-4 mb-3">
+<a href="{{< ref "/store/sidewinder-ligher.md" >}}">
 <img src="/img/swag/small-lighter.jpeg" class="img-fluid mx-auto d-block">
+</a>
 </div>
 <div class="col-4 mb-3">
+<a href="{{< ref "/store/rougue-lighter.md" >}}">
 <img src="/img/swag/large-lighter.jpeg" class="img-fluid mx-auto d-block">
+</a>
 </div>
 <div class="col-4 mb-3">
+<a href="{{< ref "/store/guillotine-cigar-cutter.md" >}}">
 <img src="/img/swag/cutter-60-ring.jpeg" class="img-fluid mx-auto d-block">
+</a>
 </div>
 </div>
 
