@@ -22,4 +22,4 @@ We are accepting a maximum of 27 4-player teams.
 
 Please download your [application](/docs/2022-cigar-classic.pdf) to sign up.
 
-For more information, please contact Tim Talarico at [TimmerTalarico@gmail.com](TimmerTalarico@gmail.com) for any questions.
+For more information, please contact Tim Talarico at [TimmerTalarico@gmail.com](mailto:TimmerTalarico@gmail.com) for any questions.
