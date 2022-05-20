@@ -1,14 +1,13 @@
 {
     "sku": "guillotine-cutter",
-    "title": "Guillotine Cigar Cutter",
+    "title": "Cigar Cutter",
     "price": 18.00,
     "description": "Sheepdog Monogrammed Guillotine Cigar Cutter",
     "taxes": "",
     "options": [
     ],
-    "thumbnail": "tshirts-thumb.png",
+    "thumbnail": "cutter-60-ring.jpeg",
     "images": [
-        { "file": "tshirt-black.png", "description": "black t-shirt" },
-        { "file": "tshirt-green.png", "description": "green t-shirt" }
+        { "file": "cutter-60-ring.jpeg", "description": "Guillotine Cigar Cutter" }
     ]
 }

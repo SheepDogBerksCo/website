@@ -6,9 +6,8 @@
     "taxes": "",
     "options": [
     ],
-    "thumbnail": "tshirts-thumb.png",
+    "thumbnail": "small-lighter.jpeg",
     "images": [
-        { "file": "tshirt-black.png", "description": "black t-shirt" },
-        { "file": "tshirt-green.png", "description": "green t-shirt" }
+        { "file": "small-lighter.jpeg", "description": "Sidewinder Lighter" }
     ]
 }

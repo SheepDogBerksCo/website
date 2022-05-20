@@ -6,9 +6,8 @@
     "taxes": "",
     "options": [
     ],
-    "thumbnail": "tshirts-thumb.png",
+    "thumbnail": "large-lighter.jpeg",
     "images": [
-        { "file": "tshirt-black.png", "description": "black t-shirt" },
-        { "file": "tshirt-green.png", "description": "green t-shirt" }
+        { "file": "large-lighter.jpeg", "description": "Rogue Ligher" }
     ]
 }
